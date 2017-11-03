@@ -1,0 +1,46 @@
+{% extends 'home/base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+    {% if registered %}
+
+    <h1> Thank you for registering! </h1>
+
+    {% else %}
+
+        <div class="container">
+
+        <div id="transparent_box">
+
+            <h1>Register your profile!</h1>
+
+        <form method="post" class="form-group" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            <div class="form-group has-error" id="place">
+
+            {{ user_form.as_p }}
+            {{ profile_form.portfolio.label}}
+            {{ profile_form.portfolio}}
+
+
+
+            <div class="container-inner">
+            {{ profile_form.picture}}
+            <div class="dropZoneOverlay">Click to add a profile picture.</div>
+
+            <input type="submit" name="" class="btn btn-primary" value="Register!">
+            </div>
+
+            </div>
+        </form>
+
+    {% endif %}
+
+        </div>
+
+        </div>
+
+{% endblock content %}

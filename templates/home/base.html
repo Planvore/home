@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<html lang="en">
+
+  <head>
+
+  {% block head %}
+
+      {% block meta %}
+        <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff">
+
+      {% endblock meta %}
+
+
+      {% block stylesheets %}
+
+        <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+          <link rel="stylesheet" href="{% static 'css/css.css' %}"/>
+          <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet"/>
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+            <link rel="apple-touch-icon" sizes="57x57" href={% static "images/favicon/apple-icon-57x57.png" %}>
+            <link rel="apple-touch-icon" sizes="60x60" href={% static "images/favicon/apple-icon-60x60.png" %}>
+            <link rel="apple-touch-icon" sizes="72x72" href={% static "images/favicon/apple-icon-72x72.png" %}>
+            <link rel="apple-touch-icon" sizes="76x76" href={% static "images/favicon/apple-icon-76x76.png" %}>
+            <link rel="apple-touch-icon" sizes="114x114" href={% static "images/favicon/apple-icon-114x114.png" %}>
+            <link rel="apple-touch-icon" sizes="120x120" href={% static "images/favicon/apple-icon-120x120.png" %}>
+            <link rel="apple-touch-icon" sizes="144x144" href={% static "images/favicon/apple-icon-144x144.png" %}>
+            <link rel="apple-touch-icon" sizes="152x152" href={% static "images/favicon/apple-icon-152x152.png" %}>
+            <link rel="apple-touch-icon" sizes="180x180" href={% static "images/favicon/apple-icon-180x180.png" %}>
+            <link rel="icon" type="image/png" sizes="192x192"  href={% static "images/favicon/android-icon-192x192.png" %}>
+            <link rel="icon" type="image/png" sizes="32x32" href={% static "images/favicon/favicon-32x32.png" %}>
+            <link rel="icon" type="image/png" sizes="96x96" href={% static "images/favicon/favicon-96x96.png" %}>
+            <link rel="icon" type="image/png" sizes="16x16" href={% static "images/favicon/favicon-16x16.png" %}>
+            <link rel="manifest" href={% static "images/favicon/manifest.json" %}>
+
+
+      {% endblock stylesheets %}
+
+            <title>Planvore - Personal and Business Solutions</title>
+
+  {% endblock head %}
+
+
+
+  </head>
+
+  <body>
+
+  {% block body %}
+
+
+
+      {% block top_navigation %}
+          {% include "home/top_nav.html" %}
+      {% endblock top_navigation %}
+
+
+
+      {% block content %}
+
+      {% endblock content %}
+
+
+      {% block footer %}
+
+           {% include "home/footer.html" %}
+
+      {% endblock footer %}
+
+
+      {% block scripts %}
+
+        <script language="JavaScript" type="text/javascript" src="{% static 'js/jquery-3.2.1.js' %}"></script>
+        <script language="JavaScript" type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script language="JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+      {% endblock scripts %}
+
+
+    {% endblock body %}
+
+  </body>
+
+</html>

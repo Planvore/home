@@ -19,8 +19,9 @@ app_name = 'home'
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name="index"),
-    url(r'^login/', views.LoginView.as_view(), name="login"),
-    url(r'^register/$', views.RegisterView.as_view(), name="register"),
-    url(r'^logout/$', views.LogoutView.as_view(), name="logout"),
-    url(r'^profile/$', views.ProfileView.as_view(), name="profile"),
+    url(r'^login/', views.user_login, name="login"),
+    url(r'^register/$', views.register, name="register"),
+    url(r'^logout/$', views.user_logout, name="logout"),
+    url(r'^profile/$', views.profile, name="profile"),
+    url(r'^forms/$', views.FormView.as_view(), name="profile"),
 ]

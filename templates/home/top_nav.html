@@ -1,17 +1,20 @@
 {% load staticfiles %}
 
-<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+<nav class="navbar navbar-custom navbar-expand-lg  sticky-top">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{% url 'home:index' %}">
             <img src="../../static/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             <span id="planvore">Planvore</span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+           <i class="fa fa-bars" aria-hidden="true"></i>
+
         </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="navbar-nav mr-auto">
 
@@ -23,10 +26,15 @@
                 <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
             </li>
 
+            {% if user.is_authenticated %}
+
+            {% else %}
+
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'home:register' %}">Register</a>
             </li>
 
+            {% endif %}
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,6 +49,9 @@
 
             </li>
 
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right"
              {% if user.is_authenticated %}
 
                 <li class="nav-item">
@@ -68,6 +79,7 @@
             </div>
 
             </li>
+
         </ul>
 
     </div>

@@ -12,10 +12,6 @@ class IndexView(TemplateView):
     template_name = 'home/index.html'
 
 
-class FormView(TemplateView):
-    template_name = 'home/forms.html'
-
-
 def register(request):
 
     registered = False

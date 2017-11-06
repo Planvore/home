@@ -23,5 +23,4 @@ urlpatterns = [
     url(r'^register/$', views.register, name="register"),
     url(r'^logout/$', views.user_logout, name="logout"),
     url(r'^profile/$', views.profile, name="profile"),
-    url(r'^forms/$', views.FormView.as_view(), name="profile"),
-]
+    ]

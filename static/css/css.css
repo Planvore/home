@@ -1,418 +1,56 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
-
-body {
-	display: block;
-	background: url("../images/texture.png") repeat;
-}
-
-
-.jumbotron {
-	background: rgba(0,0,0,0.6) !important;
-	background-size: 100%;
-
-	/*color: lavenderblush;*/
-	border-radius: 0 !important;
-}
-
-.hidden { display: none; }
-
-#planvore {
-	font-weight: normal;
-	color: #ff9a17;
-	font-family: 'Syncopate', sans-serif;
-}
-
-
-/* change the background color */
-.navbar-custom {
-	background-color: rgba(0,0,0,0.9);
-}
-
-/* change the brand and text color */
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-	color: rgba(255,255,255,.5);
-}
-
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-	color: #ffffff;
-}
-
-/* In our demo, the footers are fixed to the bottom of the page */
-
-footer{
-	position: fixed;
-	bottom: 0;
-}
-
-@media (max-height:800px){
-	footer { position: static; }
-	header { padding-top:40px; }
-}
-
-.footer-distributed{
-	background-color: rgba(0,0,0,0.9);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-	margin-top: 80px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color: #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color: #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color: #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display: inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color: inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color: #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-	background-color: #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color: #5383d3;
-	text-decoration: none;;
-}
-
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color: #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-}
-
-
-
-/*FORM CONTROL*/
-
-/* BOX LOGIN */
-.box{
-	position: relative;
-	height: 24rem;
-    top: 3rem;
-	left: 0;
-	z-index: 200;
-	right: 0;
-	width: 24rem;
-	color:#666;
-	border-radius: 0;
-	background: #FFF;
-	margin: auto;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	overflow: hidden;
-}
-
-#header{
-	background: #243e5a;
-	position: relative;
-	height: 4rem;
-	width: 100%;
-	margin-bottom: 2rem;
-}
-
-#cont-lock{
-	width: 100%;
-	height: 1rem;
-	position: relative;
-	z-index: 500;
-}
-
-#bottom-head{
-	position: relative;
-	background: #243e5a;
-	height: 3rem;
-}
-
-.lock {
-	text-align: center;
-	color: white;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 0;
-	top: 1rem;
-	bottom: 0;
-	line-height: 65px;
-	font-size: 28px;
-}
-
-
-#bottom-head::after{
-	content: '';
-	width: 0;
-	height: 15rem;
-	display: block;
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border: 7px solid rgba(0, 0, 0, 0);
-	border-bottom-color: white;
-}
-
-.box h1{
-	margin-left: 20px;
-	margin-top: 0;
-	font-size: 24px;
-	font-weight: 300;
-	color: #cfd8dc;
-	line-height: 35px;
-}
-
-.box button{
-	background: #2b4d70;
-	border:0;
-	color: #fff1f5;
-	padding:10px;
-	font-size: 16px;
-    font-weight: 350;
-	width:300px;
-	margin:20px auto;
-	display:block;
-	cursor:pointer;
-    -webkit-transition: all 0.4s;
-	transition: all 0.4s;
-	border-radius: 2px;
-}
-
-.box button:active{
-	background: #365e8a;
-    color: #88b4c8;
-}
-
-.box button:hover{
-	background: #35a6df;
-    color: #FFF;
-    -webkit-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.box p{
-	font-size:14px;
-	text-align:center;
-}
-
-.group 			  {
-	position:relative;
-	margin-bottom: 35px;
-	margin-left: 40px;
-}
-
-.inputMaterial 				{
-	font-size:18px;
-	padding:10px 10px 10px 5px;
-	display:block;
-	width:300px;
-	border:none;
-	border-bottom:1px solid #757575;
-}
-
-.inputMaterial:focus 		{ outline:none;}
-
-/* LABEL ======================================= */
-
-label 				 {
-	color:#999;
-	font-size:14px;
-	font-weight:normal;
-	position:absolute;
-	pointer-events:none;
-	left: 5px;
-	top: 15px;
-	transition: 0.3s ease all;
-	-moz-transition: 0.2s ease all;
-	-webkit-transition: 0.2s ease all;
-}
-
-/* active state */
-.inputMaterial:focus ~ label, .inputMaterial:valid ~ label 		{
-	top: -1rem;
-	font-size:14px;
-	color: #35a6df;
-}
-
-/* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:19rem; }
-.bar:before, .bar:after 	{
-	content:'';
-	height: 2.5px;
-	width: 0;
-	bottom: -0.05rem;
-	position:absolute;
-	background: #35a6df;
-	transition:0.3s ease all;
-	-moz-transition:0.3s ease all;
-	-webkit-transition:0.3s ease all;
-}
-.bar:before {
-	left:50%;
-}
-.bar:after {
-	right:50%;
-}
-
-/* active state */
-.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
-	width:50%;
-}
-
-#footer-box{
-	width: 100%;
-	height: 2rem;
-	background: #243e5a;
-	position: absolute;
-	bottom: 0;
-}
-
-.footer-text{
-  color: #cfd8dc;
-}
-
-.sign-up{
-  color: white;
-  cursor: pointer;
-}
-
-.sign-up:hover{
-   color: #b2dfdb;
-}
-
+/*
+Error: File to import not found or unreadable: compass.
+        on line 1 of css.scss
+
+1: @import 'compass';
+2: 
+3: 
+4: //COLORS
+5: $nav-bar-bg: rgba(0, 0, 0, .9);
+6: $planvore-logo-color: #ff9a17;
+
+Backtrace:
+css.scss:1
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/_Code/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
+C:/_Code/Ruby24-x64/bin/scss:23:in `load'
+C:/_Code/Ruby24-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A         on line 1 of css.scss\A \A 1: @import 'compass';\A 2: \A 3: \A 4: //COLORS\A 5: $nav-bar-bg: rgba(0, 0, 0, .9);\A 6: $planvore-logo-color: #ff9a17;"; }

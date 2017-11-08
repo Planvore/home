@@ -1,30 +1,7 @@
-body {
-  background-image: url("../images/texture.png");
-  background-position: fixed;
-  background-repeat: repeat;
-  display: block; }
-
-.jumbotron {
-  background: url("../images/jumbo.jpg") right top;
-  background-size: 100%;
-  border-radius: 0; }
-
-.hidden {
-  display: none; }
-
 #planvore {
   color: #ff9a17;
   font-family: 'Syncopate', sans-serif;
   font-weight: normal; }
-
-.navbar-custom {
-  background-color: rgba(0, 0, 0, 0.9); }
-  .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.5); }
-  .navbar-custom .nav-item.active .nav-link {
-    color: #fff; }
-  .navbar-custom .nav-item:hover .nav-link {
-    color: #fff; }
 
 .fa-bars {
   color: rgba(255, 255, 255, 0.5); }

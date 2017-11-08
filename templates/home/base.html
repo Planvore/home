@@ -12,7 +12,8 @@
         <!-- Required meta tags -->
           <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
             <meta name="msapplication-TileColor" content="#ffffff">
             <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
             <meta name="theme-color" content="#ffffff">
@@ -22,13 +23,25 @@
 
       {% block stylesheets %}
 
-        <!-- Bootstrap CSS -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-                integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <!-- CSS -->
           <link rel="stylesheet" href="{% static 'css/css.css' %}"/>
           <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet"/>
-          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+          <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <!--Import Google Icon Font-->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+          {#CSS LIBRARIES#}
+
+
+          {#<!-- MARIALIZE - Compiled and minified CSS -->#}
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+
+            {#FAVICONS#}
             <link rel="apple-touch-icon" sizes="57x57" href={% static "images/favicon/apple-icon-57x57.png" %}>
             <link rel="apple-touch-icon" sizes="60x60" href={% static "images/favicon/apple-icon-60x60.png" %}>
             <link rel="apple-touch-icon" sizes="72x72" href={% static "images/favicon/apple-icon-72x72.png" %}>
@@ -47,7 +60,7 @@
 
       {% endblock stylesheets %}
 
-            <title>Planvore - Personal and Business Solutions</title>
+            <title>Planvore</title>
 
   {% endblock head %}
 
@@ -81,10 +94,14 @@
 
       {% block scripts %}
 
+
+
+        {#J-QUERY#}
         <script language="JavaScript" type="text/javascript" src="{% static 'js/jquery-3.2.1.js' %}"></script>
         <script language="JavaScript" type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-        <script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script language="JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+           {#JS FROM CSS LIBRARIES#}
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
       {% endblock scripts %}
 

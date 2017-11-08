@@ -1,3 +1,6 @@
+@import 'bourbon/bourbon';
+
+
 //COLORS
 $nav-bar-bg: rgba(0, 0, 0, .9);
 $light-bg: #fff;
@@ -17,20 +20,8 @@ $form-box-bg: #365e8a;
 
 
 body {
-  background-image: url('../images/texture.png');
-  background-position: fixed;
-  background-repeat: repeat;
-  display: block;
+
 }
-
-
-.jumbotron {
-  background: url('../images/jumbo.jpg') right top;
-  background-size: 100%;
-  border-radius: 0;
-}
-
-.hidden { display: none; }
 
 
 #planvore {
@@ -40,22 +31,6 @@ body {
 }
 
 
-// change the background color
-.navbar-custom {
-  background-color: $nav-bar-bg;
-
-  .navbar-nav .nav-link {
-    color: $nav-bar-link;
-  }
-
-  .nav-item.active .nav-link {
-    color: $text-color-active;
-  }
-
-  .nav-item:hover .nav-link {
-    color: $text-color-active;
-  }
-}
 
 .fa-bars {
   color: $nav-bar-link;
